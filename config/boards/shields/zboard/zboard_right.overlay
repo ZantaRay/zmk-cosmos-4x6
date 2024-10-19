@@ -1,6 +1,6 @@
-// xiao_flex_v2_right.overlay
+// zboard_right.overlay
 
-#include "xiao_flex_v2.dtsi"
+#include "zboard.dtsi"
 
 &default_transform {
     col-offset = <6>;

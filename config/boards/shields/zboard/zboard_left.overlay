@@ -1,6 +1,6 @@
-// xiao_flex_v2_left.overlay
+//zboard_left.overlay
 
-#include "xiao_flex_v2.dtsi" 
+#include "zboard.dtsi" 
 
 &kscan0 {
     col-gpios
