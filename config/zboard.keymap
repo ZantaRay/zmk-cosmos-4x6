@@ -64,7 +64,7 @@
 		//                     		  | ALT  | GUI  | SHFT |  		| ENT  |  MB1 |  MB2 |
 					bindings = <
 		&kp ESC   &trans &trans   &kp UP   &trans    &trans 			&trans &trans   &trans    &trans  &trans   &trans 
-		&trans    &trans &kp LEFT &kp DOWN &kr RIGHT &trans 			&trans &trans   &trans    &trans  &kp SEMI &trans 
+		&trans    &trans &kp LEFT &kp DOWN &kp RIGHT &trans 			&trans &trans   &trans    &trans  &kp SEMI &trans 
 		&trans    &trans &trans   &trans   &trans    &trans 			&trans &trans   &trans    &trans  &kp BSLH   &trans
 					&trans   &trans													&trans   &trans
 									&trans  &trans   &trans 		&trans  	  	   &trans  
