@@ -67,7 +67,7 @@
 		&trans    &trans &kp LEFT &kp DOWN &kp RIGHT &trans 			&trans &trans   &trans    &trans  &kp SEMI &trans 
 		&trans    &trans &trans   &trans   &trans    &trans 			&trans &trans   &trans    &trans  &kp BSLH   &trans
 					&trans   &trans													&trans   &trans
-									&trans  &trans   &mo 3 		&trans  	  	   &trans  
+									&trans  &trans   &mo 3 		    &trans  	  	   &trans  
 									&trans  &kp BSPC &trans			&trans   &trans    &trans
             >; 
 
@@ -85,7 +85,7 @@
 					bindings = <
 		&kp ESC   &trans &trans   &kp UP   &trans    &trans 			&trans &trans   &trans    &trans  &trans   &trans 
 		&trans    &trans &kp LEFT &kp DOWN &sys_reset &trans 			&trans &sys_reset   &trans    &trans  &kp SEMI &trans 
-		&&bootloader   &trans &trans   &trans   &trans    &trans 			&trans &trans   &trans    &trans  &kp BSLH   &&bootloader
+		&bootloader   &trans &trans   &trans   &trans    &trans 			&trans &trans   &trans    &trans  &kp BSLH   &&bootloader
 					&trans   &trans													&trans   &trans
 									&trans  &trans   &trans 		&trans  	  	   &trans  
 									&trans  &kp BSPC &trans			&trans   &trans    &trans
