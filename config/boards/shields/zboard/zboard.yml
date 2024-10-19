@@ -1,0 +1,12 @@
+file_format: "1"
+id: zboard
+Name: zBoard
+type: shield
+url: https://github.com/ZantaRay/zmk-cosmos-4x6
+requires: 
+    - nice_nano_v2
+features:
+  - keys
+  - trackball
+  - encoder
+  - rgb

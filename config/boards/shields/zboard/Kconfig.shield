@@ -1,0 +1,10 @@
+config SHIELD_ZBOARD
+    bool
+
+config SHIELD_ZBOARD_LEFT
+    def_bool $(shields_list_contains,xiao_flex_v2_left)
+    select SHIELD_ZBOARD
+
+config SHIELD_ZBOARD_RIGHT
+    def_bool $(shields_list_contains,xiao_flex_v2_right)
+    select SHIELD_ZBOARD
