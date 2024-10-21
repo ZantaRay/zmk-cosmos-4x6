@@ -61,7 +61,7 @@
 		//                     		  | CTRL | BSPC | LOWER|  		|RAISE |   	  |  MB3 |
 		//                     		  | ALT  | GUI  | SHFT |  		| ENT  |  MB1 |  MB2 |
 					bindings = <
-		&kp ESC   &trans &trans   &kp UP   &trans    &trans 			&trans &trans   &trans    &trans  &trans   &trans 
+		&kp ESC   &trans &trans   &kp UP   &trans    &trans 			&trans &trans   &trans    &trans  &trans   &kp DEL
 		&trans    &trans &kp LEFT &kp DOWN &kp RIGHT &trans 			&trans &trans   &trans    &trans  &kp SEMI &trans 
 		&trans    &trans &trans   &trans   &trans    &trans 			&trans &trans   &trans    &trans  &kp BSLH   &trans
 					&trans   &trans													&trans   &trans
@@ -80,7 +80,7 @@
 		//                     		  | CTRL | BSPC | LOWER|  		|RAISE |   	  |  MB3 |
 		//                     		  | ALT  | GUI  | SHFT |  		| ENT  |  MB1 |  MB2 |
 					bindings = <
-		&kp ESC   &trans &trans   &kp UP   &trans    &bootloader		&bootloader &trans   &trans    &trans  &trans   &trans 
+		&kp ESC   &trans &trans   &kp UP   &trans    &bootloader		&bootloader &trans   &trans    &trans  &trans   &kp DEL
 		&trans    &trans &kp LEFT &kp DOWN &sys_reset &trans 			&trans &sys_reset   &trans    &trans  &kp SEMI &trans 
 		&bootloader   &trans &trans   &trans   &trans    &trans 			&trans &trans   &trans    &trans  &kp BSLH   &bootloader
 					&trans   &trans													&trans   &trans
