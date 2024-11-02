@@ -127,7 +127,7 @@
 		&mo 5    &kp LSHFT &kp A  &kp S    &kp D    &kp F                &kp J  &kp N4   &kp N5    &kp N6  &kp KP_PLUS   &kp ENTER
 		&kp LALT &kp LCTRL &kp Z  &kp X    &kp C    &kp V      		     &kp M  &kp N7   &kp N8    &kp N9   &kp N0 	     &kp KP_EQUAL
 					&kp LBKT   &kp RBKT														&kp KP_MULTIPLY &kp KP_DIVIDE
-									&kp UP    &kp UP    &kp UP 		&to 1  			     &mkp J 
+									&kp UP    &kp UP    &kp UP 		&to 1  			     &kp J 
 									&kp LEFT  &kp DOWN  &kp RIGHT 	&kp ENTER  &kp SPACE &kp RCTRL
             >;
 
