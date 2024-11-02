@@ -31,27 +31,27 @@
 									&kp LALT  &kp LGUI  &kp LSHFT 	&kp ENTER  &mkp MB1  &mkp MB2 
             >;
 
-            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         lower {
 		// ------------------------------------------------------------------------------------------------------------
 		// |  ESC  | BSPC |  W  |  Up  |  R   | DEL  |                   |  Y   |  U    |  I   |  O   |   P   |  DEL |
 		// |  SHFT | LGUI |Left | Down | Right|  G   |                   |  H   |  J    |  K   |  L   |   ;   | ENTR |
-		// |  CTRL |  Z   |  X  |  C   |  V   |  B   |   				 |  N   |  M    |  ,   |  .   |   \   | SHFT |
+		// |  CTRL |  Z   |  X  |  C   |  V   |  B   |   				|  N   |  M    |  ,   |  .   |   \   | SHFT |
 		// 				 |  [  |  ]   | 											   |  -   |  =   |
 		//                     		  | CTRL | BSPC | LOWER|  		| Util |   	  |  MB3 |
 		//                     		  | ALT  | UTIL | SHFT |  		| ENT  |  MB1 |  MB2 |
 					bindings = <
 		&kp ESC   &kp BSPC &trans   &kp UP   &trans    &kp DEL 			&trans &trans   &trans    &trans  &trans   &kp DEL
-		&trans    &trans &kp LEFT &kp DOWN &kp RIGHT &trans 			&trans &trans   &trans    &trans  &kp SEMI &trans 
+		&trans    &LGUI &kp LEFT &kp DOWN &kp RIGHT &trans 			&trans &trans   &trans    &trans  &kp SEMI &trans 
 		&trans    &trans &trans   &trans   &trans    &trans 			&trans &trans   &trans    &trans  &kp BSLH   &trans
 					&trans   &trans													&trans   &trans
 									&trans    &kp BSPC  &trans 		&mo 3   			 &trans     
 									&trans    &mo 3     &trans     	&trans     &trans    &trans    
             >; 
 
-            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         raise {
@@ -71,7 +71,7 @@
 									&trans    &trans    &trans     	&trans     &mo 3     &trans    
             >; 
 
-            sensor-bindings = <BINDING C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 		
 		util {
@@ -91,7 +91,7 @@
 									&trans    &trans    &trans     	&trans     &trans    &trans    
             >; 
 
-            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 		
 		game {
@@ -111,7 +111,7 @@
 									&kp LEFT  &kp DOWN  &kp RIGHT 	&kp ENTER  &kp SPACE &kp RCTRL
             >;
 
-            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 		
 		num {
@@ -120,7 +120,7 @@
 		// |  G_R  |  SHFT |  A  |  S  |  D  |  F  |                   |  G   |  4  |  5  |  6  |  +  | ENTR |
 		// |  ALT  |  CTRL |  Z  |  X  |  C  |  V  |   		           |  B   |  7  |  8  |  9  |  0  |  =   |
 		// 				 |  [  |  ]   | 											   |  *   |  /   |
-		//                     		  |  UP  |  UP  |  UP  |  		| BASE |   	  |  MB3 |
+		//                     		  |  UP  |  UP  |  UP  |  		| BASE |   	  |  J   |
 		//                     		  | LEFT | DOWN | RGHT |  		| ENT  |  SPC | CTRL |
 					bindings = <
 		&kp ESC  &kp TAB   &kp Q  &kp W    &kp E    &kp R            	 &kp U  &kp N1   &kp N2    &kp N3  &kp KP_MINUS  &kp BSPC
@@ -131,7 +131,7 @@
 									&kp LEFT  &kp DOWN  &kp RIGHT 	&kp ENTER  &kp SPACE &kp RCTRL
             >;
 
-            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
     };
