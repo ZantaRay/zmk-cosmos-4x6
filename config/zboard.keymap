@@ -44,7 +44,7 @@
 		//                     		  | ALT  | UTIL | SHFT |  		| ENT  |  MB1 |  MB2 |
 					bindings = <
 		&kp ESC   &kp BSPC &trans   &kp UP   &trans    &kp DEL 			&trans &trans   &trans    &trans  &trans   &kp DEL
-		&trans    &LGUI &kp LEFT &kp DOWN &kp RIGHT &trans 			&trans &trans   &trans    &trans  &kp SEMI &trans 
+		&trans    &kp LGUI &kp LEFT &kp DOWN &kp RIGHT &trans 			&trans &trans   &trans    &trans  &kp SEMI &trans 
 		&trans    &trans &trans   &trans   &trans    &trans 			&trans &trans   &trans    &trans  &kp BSLH   &trans
 					&trans   &trans													&trans   &trans
 									&trans    &kp BSPC  &trans 		&mo 3   			 &trans     
