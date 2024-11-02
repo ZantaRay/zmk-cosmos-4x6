@@ -42,14 +42,14 @@
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>; //TB1 nCS 1.11
+    cs-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>; //TB1 nCS
 
     trackball: trackball@0 {
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //TB2 Mot 0.29
+        irq-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //TB2 Mot
 		
 		// snipe-layers = <2>;
         // scroll-layers = <1 3 4>;
