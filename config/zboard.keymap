@@ -31,7 +31,7 @@
 									&kp LALT  &kp LGUI  &kp LSHFT 	&kp ENTER  &mkp MB1  &mkp MB2 
             >;
 
-            sensor-bindings = <C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         lower {
@@ -51,7 +51,7 @@
 									&trans    &mo 3     &trans     	&trans     &trans    &trans    
             >; 
 
-            sensor-bindings = <C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         raise {
@@ -71,7 +71,7 @@
 									&trans    &trans    &trans     	&trans     &mo 3     &trans    
             >; 
 
-            sensor-bindings = <C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <BINDING C_VOL_UP C_VOL_DN>;
         };
 		
 		util {
@@ -91,7 +91,7 @@
 									&trans    &trans    &trans     	&trans     &trans    &trans    
             >; 
 
-            sensor-bindings = <C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 		
 		game {
@@ -111,7 +111,7 @@
 									&kp LEFT  &kp DOWN  &kp RIGHT 	&kp ENTER  &kp SPACE &kp RCTRL
             >;
 
-            sensor-bindings = <C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 		
 		num {
@@ -131,7 +131,7 @@
 									&kp LEFT  &kp DOWN  &kp RIGHT 	&kp ENTER  &kp SPACE &kp RCTRL
             >;
 
-            sensor-bindings = <C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <BINDING C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
     };
