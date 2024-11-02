@@ -36,9 +36,9 @@
 
         lower {
 		// ------------------------------------------------------------------------------------------------------------
-		// |  ESC  | BSPC|  W  |  Up  |  R   | DEL  |                   |  Y   |  U    |  I   |  O   |   P   |  DEL |
-		// |  SHFT |  A  |Left | Down | Right|  G   |                   |  H   |  J    |  K   |  L   |   ;   | ENTR |
-		// |  CTRL |  Z  |  X  |  C   |  V   |  B   |   				|  N   |  M    |  ,   |  .   |   \   | SHFT |
+		// |  ESC  | BSPC |  W  |  Up  |  R   | DEL  |                   |  Y   |  U    |  I   |  O   |   P   |  DEL |
+		// |  SHFT | LGUI |Left | Down | Right|  G   |                   |  H   |  J    |  K   |  L   |   ;   | ENTR |
+		// |  CTRL |  Z   |  X  |  C   |  V   |  B   |   				 |  N   |  M    |  ,   |  .   |   \   | SHFT |
 		// 				 |  [  |  ]   | 											   |  -   |  =   |
 		//                     		  | CTRL | BSPC | LOWER|  		| Util |   	  |  MB3 |
 		//                     		  | ALT  | UTIL | SHFT |  		| ENT  |  MB1 |  MB2 |
