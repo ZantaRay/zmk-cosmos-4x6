@@ -14,18 +14,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default {
+		colemak-dh {
 		// ------------------------------------------------------------------------------------------------------------
-		// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I   |  O   |   P   | BSPC |
-		// |  SHFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K   |  L   |   '   | ENTR |
-		// |  CTRL |  Z  |  X  |  C   |  V   |  B   |   				|  N   |  M    |  ,   |  .   |   /   | SHFT |
+		// |  TAB  |  Q  |  W  |  F   |  P   |  B   |                   |  J   |  L    |  U   |  Y   |   '   | BSPC |
+		// |  SHFT |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E   |  I   |   O   | ENTR |
+		// |  CTRL |  Z  |  X  |  C   |  D   |  V   |   				|  K   |  H    |  ,   |  .   |   /   | SHFT |
 		// 				 |  [  |  ]   | 											   |  -   |  =   |
 		//                     		  | CTRL | SPC  | LOWER|  		|RAISE |   	  |  MB3 |
 		//                     		  | ALT  | GUI  | SHFT |  		| ENT  |  MB1 |  MB2 |
 					bindings = <
-		&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp BSPC
-		&kp LSHFT &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SQT  &kp ENTER
-		&kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B  					 &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+		&kp TAB   &kp Q  &kp W  &kp F    &kp P    &kp B                      &kp J  &kp L    &kp U     &kp Y   &kp SQT  &kp BSPC
+		&kp LSHFT &kp A  &kp R  &kp S    &kp T    &kp G                      &kp M  &kp N    &kp E     &kp I   &kp O    &kp ENTER
+		&kp LCTRL &kp Z  &kp X  &kp C    &kp D    &kp V  					 &kp K  &kp H    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 					&kp LBKT   &kp RBKT														&kp MINUS   &kp EQUAL
 									&kp LCTRL &kp SPACE &mo 1  		&mo 2  				 &mkp MB3  
 									&kp LALT  &kp LGUI  &kp LSHFT 	&kp ENTER  &mkp MB1  &mkp MB2 
@@ -33,7 +33,7 @@
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
-
+		
         lower {
 		// ------------------------------------------------------------------------------------------------------------
 		// |  ESC  | BSPC |BSPC |  Up  |  DEL | DEL  |                   |  `   |  1  |  2  |  3  |  -  | BSPC |
@@ -89,50 +89,31 @@
 					&bt BT_PRV   &bt BT_NXT													&bt BT_PRV   &bt BT_NXT	
 									&trans    &trans    &trans		&trans 				 &trans     
 									&trans    &trans    &trans     	&trans     &trans    &trans    
-            >; e
+            >; 
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 		
-		game {
+        qwerty {
 		// ------------------------------------------------------------------------------------------------------------
-		// |  ESC  |  TAB  |  Q  |  W  |  E  |  R  |                   |  Y   |  U  |  I  |  O  |  P  | BSPC |
-		// |  G_R  |  SHFT |  A  |  S  |  D  |  F  |                   |  H   | MB4 | MB1 | MB2 | MB5 | ENTR |
-		// |  ALT  |  CTRL |  Z  |  X  |  C  |  V  |   		           |  N   |  M  |  ,  |  .  |  /  | SHFT |
+		// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I   |  O   |   P   | BSPC |
+		// |  SHFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K   |  L   |   '   | ENTR |
+		// |  CTRL |  Z  |  X  |  C   |  V   |  B   |   				|  N   |  M    |  ,   |  .   |   /   | SHFT |
 		// 				 |  [  |  ]   | 											   |  -   |  =   |
-		//                     		  |  UP  |  UP  |  UP  |  		| BASE |   	  |  MB3 |
-		//                     		  | LEFT | DOWN | RGHT |  		| ENT  |  SPC | CTRL |
+		//                     		  | CTRL | SPC  | LOWER|  		|RAISE |   	  |  MB3 |
+		//                     		  | ALT  | GUI  | SHFT |  		| ENT  |  MB1 |  MB2 |
 					bindings = <
-		&kp ESC  &kp TAB   &kp Q  &kp W    &kp E    &kp R            	 &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSPC
-		&mo 5    &kp LSHFT &kp A  &kp S    &kp D    &kp F                &kp H  &mkp MB4 &mkp MB1  &mkp MB2 &mkp MB5 &kp ENTER
-		&kp LALT &kp LCTRL &kp Z  &kp X    &kp C    &kp V      		     &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
+		&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp BSPC
+		&kp LSHFT &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SQT  &kp ENTER
+		&kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B  					 &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 					&kp LBKT   &kp RBKT														&kp MINUS   &kp EQUAL
-									&kp UP    &kp UP    &kp UP 		&to 1  			     &mkp MB3
-									&kp LEFT  &kp DOWN  &kp RIGHT 	&kp ENTER  &kp SPACE &kp RCTRL
+									&kp LCTRL &kp SPACE &mo 1  		&mo 2  				 &mkp MB3  
+									&kp LALT  &kp LGUI  &kp LSHFT 	&kp ENTER  &mkp MB1  &mkp MB2 
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
-		
-		num {
-		// ------------------------------------------------------------------------------------------------------------
-		// |  ESC  |  TAB  |  Q  |  W  |  E  |  R  |                   |  T   |  1  |  2  |  3  |  -  | BSPC |
-		// |  G_R  |  SHFT |  A  |  S  |  D  |  F  |                   |  G   |  4  |  5  |  6  |  +  | ENTR |
-		// |  ALT  |  CTRL |  Z  |  X  |  C  |  V  |   		           |  B   |  7  |  8  |  9  |  0  |  =   |
-		// 				 |  [  |  ]   | 											   |  *   |  /   |
-		//                     		  |  UP  |  UP  |  UP  |  		| BASE |   	  |  J   |
-		//                     		  | LEFT | DOWN | RGHT |  		| ENT  |  SPC | CTRL |
-					bindings = <
-		&kp ESC  &kp TAB   &kp Q  &kp W    &kp E    &kp R            	 &kp U  &kp N1   &kp N2    &kp N3  &kp KP_MINUS  &kp BSPC
-		&mo 5    &kp LSHFT &kp A  &kp S    &kp D    &kp F                &kp J  &kp N4   &kp N5    &kp N6  &kp KP_PLUS   &kp ENTER
-		&kp LALT &kp LCTRL &kp Z  &kp X    &kp C    &kp V      		     &kp M  &kp N7   &kp N8    &kp N9   &kp N0 	     &kp KP_EQUAL
-					&kp LBKT   &kp RBKT														&kp KP_MULTIPLY &kp KP_DIVIDE
-									&kp UP    &kp UP    &kp UP 		&to 1  			     &kp J 
-									&kp LEFT  &kp DOWN  &kp RIGHT 	&kp ENTER  &kp SPACE &kp RCTRL
-            >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
-        };
 
     };
 };
